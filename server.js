@@ -9,7 +9,7 @@ const session  = require('express-session');
 const cookieParser = require('cookie-parser');
 const MongoStore = require('connect-mongo')(session);
 const flash = require('express-flash');
-
+const port = process.env.PORT || 3000;
 const app = express();
 
 const secret = require('./config/secret');
